@@ -4,109 +4,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto Final</title>
+    <link id="estilos" rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
+
+<body style="background-color: #0a192f;">    
     <header id="main-header">
-        <nav class="navbar justify-content-center">
-            <ul class="nav justify-content-center">
+        <nav class="navbar">
+            <ul class="nav" id="nav">
                 <li class="nav-item">
-                     <button type="button" class="btn btn-dark">ABOUT</button>
+                    <a href="#aboutme"><button type="button" class="btn btn-dark">ABOUT</button></a>                     
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-dark">ESTUDIOS</button>
+                    <a href="#formacad"><button type="button" class="btn btn-dark">ESTUDIOS</button></a>                    
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-dark">EXPERIENCIA LABORAL</button>
+                    <a href="#explab"><button type="button" class="btn btn-dark">EXPERIENCIA LABORAL</button></a>                    
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-dark">HARD SKILLS</button>
+                    <a href="#lang"><button type="button" class="btn btn-dark">IDIOMAS</button></a>                    
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-dark">SOFT SKILLS</button>
-                </li>            
+                    <a href="#hskills"><button type="button" class="btn btn-dark">HARD SKILLS</button></a>                    
+                </li>
+                <li class="nav-item">
+                    <a href="#sskills"><button type="button" class="btn btn-dark">SOFT SKILLS</button></a>                    
+                </li>                         
             </ul>
-        </nav>
-    </header>        
-        
+            <audio autoplay loop controls>
+                <source src="./assets/modern-vlog-140795.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>                         
+        </nav>        
+    </header>    
+    
     <div class="container-fluid">
-        <div class="container about">
-            <h1>ACERCA DE MÍ</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nemo atque debitis? Iusto facere numquam reprehenderit mollitia itaque dolorem exercitationem aliquam beatae voluptatem asperiores? Voluptate harum dolores reiciendis provident sed?</p>
+        <div class="banner">
+            <img src="./assets/bienvenido.png" alt="Banner" id="bnr">
         </div>
-        <div class="container formacion_academica">
-            <h1>ESTUDIOS</h1>
-            <div class="container text-center">
-                
+
+        <div class="container about" id="aboutme">
+            <div class="titulo">
+                <h1 class="title">ACERCA DE MÍ</h1> 
+            </div>
+            <div class="acerca">
+                <img src="./assets/perfil_2022-09-24.jpeg" alt="Foto Perfil" class="foto">                   
+                <p>Mi nombre es Federico Baldasso y soy un apasionado de la tecnología y entusiasta por el desarrollo de soluciones y/o mejoras a los problemas que se presentan. Soy Técnico Electrónico y, actualmente, me encuentro realizando diversas capacitaciones relacionadas a la Programación Web y el Análisis de Datos con el objetivo de desempeñarme profesionalmente en el campo IT.
+                Mi principal interés es el aprendizaje constante para poder transformar y optimizar los diversos ámbitos que lo requieran.</p>  
+            </div>                      
+        </div>            
+        
+        <div class="container formacion_academica" id="formacad">
+            <div class="titulo">
+                <h1 class="title">ESTUDIOS</h1>
+            </div>
+            
+            <div class="container text-center">                
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 fecha">
                         2005 - Actualidad
                         <br>
                         Mendoza, Argentina
                     </div>
-                    <div class="col-8">
-                        INGENIERÍA ELECTRÓNICA
+                    <div class="col-8 estudio">
+                        <b>INGENIERÍA ELECTRÓNICA</b>
                         <br>
                         Universidad Tecnológica Nacional - Facultad Regional Mendoza
                     </div>                                   
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 fecha">
                         2002 - 2004
                         <br>
                         Mendoza, Argentina
                     </div>
-                    <div class="col-8">
-                        PRODUCCIÓN DE BIENES Y SERVICIOS
+                    <div class="col-8 estudio">
+                        <b>PRODUCCIÓN DE BIENES Y SERVICIOS</b>
                         <br>
                         Escuela de Comercio Martín Zapata (Universidad Nacional de Cuyo)
                     </div>                               
                 </div>
-
             </div>
         </div>
-        <div class="container  experiencia_laboral">
-            <h1>EXPERIENCIA LABORAL</h1>
-            <div class="container text-center">
-                
+
+        <div class="container formacion_complementaria" id="formacompl">
+            <div class="titulo">
+                <h1 class="title">FORMACIÓN COMPLEMENTARIA</h1>
+            </div>
+            
+            <div class="container text-center">                
                 <div class="row">
-                    <div class="col-4">
-                        2005 - Actualidad
+                    <div class="col-4 fecha">
+                        10 / 22 – 01 / 23
                         <br>
-                        Mendoza, Argentina
+                        Argentina
                     </div>
-                    <div class="col-8">
-                        INGENIERÍA ELECTRÓNICA
+                    <div class="col-8 estudio">
+                        <b>PYTHON</b> (orientado a Desarrollo Backend)
+                        <br>
+                        Coderhouse
                     </div>                                   
                 </div>
                 <div class="row">
-                    <div class="col-4">
-                        2002 - 2004
+                    <div class="col-4 fecha">
+                        03 / 22 – 10 / 22
+                        <br>
+                        Argentina
+                    </div>
+                    <div class="col-8 estudio">
+                        <b>DATA SCIENCE</b> (Python y librerías, Regresión, Clasificación, etc)
+                        <br>
+                        Coderhouse
+                    </div>                               
+                </div>
+                <div class="row">
+                    <div class="col-4 fecha">
+                        01 / 22 – 12 / 22
+                        <br>
+                        Argentina
+                    </div>
+                    <div class="col-8 estudio">
+                        <b>FULL STACK DEVELOPER</b> (JavaScript, React.Js, Next.Js, Node.Js)
+                        <br>
+                        NUCBA
+                    </div>                               
+                </div>
+                <div class="row">
+                    <div class="col-4 fecha">
+                        11 / 21 – 07 / 22
+                        <br>
+                        Argentina
+                    </div>
+                    <div class="col-8 estudio">
+                        <b>FULL STACK DEVELOPER</b> (Typescript, Angular, Bootstrap, Java, etc)
+                        <br>
+                        Argentina Programa – Ministerio de Desarrollo Productivo
+                    </div>                               
+                </div>
+                <div class="row">
+                    <div class="col-4 fecha">
+                        10 / 21 – 12 / 21
+                        <br>
+                        Argentina
+                    </div>
+                    <div class="col-8 estudio">
+                        <b>DATA ANALYTICS</b> (SQL, Power BI)
+                        <br>
+                        Coderhouse
+                    </div>                               
+                </div>
+            </div>
+        </div>
+
+        <div class="container  experiencia_laboral" id="explab">
+            <div class="titulo">
+                <h1  class="title">EXPERIENCIA LABORAL</h1>
+            </div>
+            
+            <div class="container text-center">                
+                <div class="row">
+                    <div class="col-4 fecha">
+                        De 04/2021 a Actualidad
+                        <br>
+                        Argentina
+                    </div>
+                    <div class="col-8 explab">
+                        <b>MOONLIT SOLUTIONS (Autónomo)</b>
+                        <br>
+                        <i>Software & Hardware Developer (Arduino, Programación Web, Data Analysis)</i>
+                        <br>
+                        Desarrollo de Sistema de Medición de Temperatura y Análisis de Datos para Prevención de Heladas en Sector Agrícola.
+                    </div>                                   
+                </div>
+                <div class="row">
+                    <div class="col-4 fecha">
+                        De 03/2019 a 03/2021
                         <br>
                         Mendoza, Argentina
                     </div>
-                    <div class="col-8">
-                        PRODUCCIÓN DE BIENES Y SERVICIOS
+                    <div class="col-8 explab">
+                        <b>PROGESER S.R.L.</b>
+                        <br>
+                        <i>Biomedical Equipment Technician en Hospital L.C. Lagomaggiore</i>
+                        <br>
+                        Mantenimiento Preventivo y Correctivo de: Respiradores, Mesas de Anestesia, Cardiodesfibriladores, Electrobisturíes, Monitores Multiparamétricos, Electrocardiógrafos, Centrífugas, etc.
                     </div>                               
                 </div>
-
+                <div class="row">
+                    <div class="col-4 fecha">
+                        De 07/2017 a 02/2019
+                        <br>
+                        Mendoza, Argentina
+                    </div>
+                    <div class="col-8 explab">
+                        <b>S.M.A. (Sistemas Médicos Avanzados)</b>
+                        <br>
+                        <i>Field Service Engineer</i>
+                        <br>
+                        Mantenimiento de Equipamiento Médico de Alta Complejidad: Resonadores Magnéticos, Tomógrafos, Mamógrafos, Ecógrafos, Densitómetros, Panorámico Dental, Hemodinamia, etc.
+                    </div>                               
+                </div>
             </div>
         </div>
-        <div class="container idiomas">
-            <h1>IDIOMAS</h1>
+
+        <div class="container idiomas" id="lang">
+            <div class="titulo">
+                <h1 class="title">IDIOMAS</h1>
+            </div>
+            
             <div class="container">
                 <ul>
-                    <li>Español: Nativo</li>
-                    <li>Inglés Intermedio (B2)</li>
-                    <li>Italiano Intermedio (PLIDA-B2)</li>                    
+                    <li><b>Español</b>: Nativo</li>
+                    <li><b>Inglés</b>: Intermedio (B2)</li>
+                    <li><b>Italiano</b>: Intermedio (PLIDA-B2)</li>                    
                 </ul>
-
             </div>
         </div>
-        <div class="container hard_skills">
-            <h1>HARD SKILLS</h1>
+
+        <div class="container hard_skills" id="hskills">
+            <div class="titulo">
+                <h1 class="title">HARD SKILLS</h1>
+            </div>
+            
             <div class="container">
                 <ul>
                     <div class="row">
@@ -118,46 +238,50 @@
                         </div>
                         <div class="col-3">
                             <li>Angular</li>
+                            <li>React</li>
                             <li>Java</li>
                             <li>Git & GitHub</li>
-                            <li>SQL</li>
+                            
                         </div>
                         <div class="col-3">
+                            <li>SQL</li>
                             <li>Power Bi</li>
                             <li>Arduino</li>
-                            <li>Postman</li>
-                            <li>Django</li>
+                            <li>Postman</li>                            
                         </div>
                         <div class="col-3">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </div>      
-
-                    </div>
-                    
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>NodeJs</li>                     
+                        </div>
+                    </div>                    
                 </ul>
-
             </div>
         </div>
-        <div class="container soft_skills">
-            <h1>SOFT SKILLS</h1>
+
+        <div class="container soft_skills" id="sskills">
+            <div class="titulo">
+                <h1 class="title">SOFT SKILLS</h1>
+            </div>
+            
             <div class="container">
                 <ul>
-                    <li>Capacidad Analítica</li>
-                    <li>Resolución de problemas</li>
-                    <li>Trabajo en equipo</li>                    
+                    <li>Capacidad Analítica.</li>
+                    <li>Resolución de problemas.</li>
+                    <li>Trabajo en equipo.</li>                    
                 </ul>
-
             </div>
         </div>
 
-
+        <footer>
+            <div class="footer">
+                <button id="boton">Cambiar Fondo</button>
+                <h5 class="ft">Federico Baldasso &copy 2023</h5>                
+                <button id="boton_reset">Restablecer Fondo</button>                        
+            </div>            
+        </footer>    
     </div>
-    <footer>
 
-    </footer>
-    
+    <script src="script.js"></script>    
 </body>
 </html>
